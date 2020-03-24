@@ -1,0 +1,65 @@
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="<% root_path %>">
+      <span class="glyphicon glyphicon glyphicon-th text-warning" aria-hidden="true"></span>
+      Gestion Intégré de l'Administration
+      <span class="glyphicon glyphicon glyphicon-option-vertical text-secondary" aria-hidden="true"></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav w-100">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon glyphicon-user text-success" aria-hidden="true"></span> cheickhtembely@gmail.com
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-user text-secondary" aria-hidden="true"></span> Profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-off text-danger" aria-hidden="true"></span> Logout</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="<%= root_path %>">
+            <span class="glyphicon glyphicon glyphicon-home text-warning" aria-hidden="true"></span> Home
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon glyphicon-file text-warning" aria-hidden="true"></span> Accéder
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="<%= pgbanque_path %>"><span class="glyphicon glyphicon glyphicon-oil text-secondary" aria-hidden="true"></span> Banque</a>
+            <a class="dropdown-item" href="<%= pgcompte_path %>"><span class="glyphicon glyphicon glyphicon-credit-card text-secondary" aria-hidden="true"></span> Compte</a>
+            <a class="dropdown-item" href="<%= pgetatcivil_path %>"><span class="glyphicon glyphicon glyphicon-adjust text-secondary" aria-hidden="true"></span> Etat-Civil</a>
+            <a class="dropdown-item" href="<%= pggenre_path %>"><span class="glyphicon glyphicon glyphicon-tent text-secondary" aria-hidden="true"></span> Genre</a>
+            <a class="dropdown-item" href="<%= pgpersonnel_path %>"><span class="glyphicon glyphicon glyphicon-user text-secondary" aria-hidden="true"></span> Personnel</a>
+            <a class="dropdown-item" href="<%= pgservice_path %>"><span class="glyphicon glyphicon glyphicon-tower text-secondary" aria-hidden="true"></span> Service</a>
+            <a class="dropdown-item" href="<%= pgstatut_path %>"><span class="glyphicon glyphicon glyphicon-tent text-secondary" aria-hidden="true"></span> Statut</a>
+            <a class="dropdown-item" href="<%= pgtitre_path %>"><span class="glyphicon glyphicon glyphicon-education text-secondary" aria-hidden="true"></span> Titre</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link text-white" href=""><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <%= Time.now.strftime("%d/%m/%Y") %></a>
+        </li>
+        <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon glyphicon-align-justify text-warning" aria-hidden="true"></span> Menus</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-plus text-success" aria-hidden="true"></span> Add. Compte</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-minus text-danger" aria-hidden="true"></span> Supp. Compte</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-cog text-secondary" aria-hidden="true"></span> Parametre</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><span class="glyphicon glyphicon glyphicon-info-sign text-primary" aria-hidden="true"></span> About</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
