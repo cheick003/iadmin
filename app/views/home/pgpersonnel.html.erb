@@ -1,11 +1,16 @@
 <!-- Begin header content -->
-<%= render partial: 'shared/index/navbar' %>
+<%= render partial: 'shared/home/index/navbar' %>
 <!-- End header content -->
 
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-5"><span style="color:#1078ff">Bienvenue! </span>Gestion Intégré de l'Administration</h1>
+    <h1 class="mt-5 text-center text-black"><%=@titlepageone %></h1>
+    <h4 class="mt-2 mb-4 p-2 text-light bg-info">
+      <span class="glyphicon glyphicon glyphicon-file h5 text-light" aria-hidden="true"></span> <%=@titlepagetwoa %>
+      <span class="glyphicon glyphicon glyphicon-chevron-right h5 text-white-50" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon glyphicon-user h5 text-light" aria-hidden="true"></span> <%=@titlepagetwob %>
+    </h4>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">one</a>
@@ -41,11 +46,10 @@
         ...five...
       </div>
     </div>
-    <%#= render partial: 'shared/test' %>
   </div>
 </main>
 <!-- End page content -->
 
 <!-- Begin footer content -->
-<%= render partial: 'shared/index/footer' %>
+<%= render partial: 'shared/home/index/footer' %>
 <!-- End footer content -->
